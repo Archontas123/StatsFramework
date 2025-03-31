@@ -1,0 +1,12 @@
+name: SkillFramework
+version: 1.0
+main: io.tavuc.skillsystem.Main
+api-version: 1.20
+author: Tavuc
+commands:
+  stats:
+    description: Shows your current stats.
+    usage: /stats
+  assign:
+    description: Assigns stat points to a stat.
+    usage: /assign <stat> <amount>
