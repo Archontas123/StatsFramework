@@ -1,0 +1,69 @@
+# Skills Framework Formulas Configuration
+# Define calculation formulas for stats
+
+formulas:
+  # Strength formulas
+  strength_damage:
+    type: DIMINISHING
+    base-value: 1.0
+    scale-value: 0.01
+    diminishing-factor: 0.01
+    description: "Damage multiplier based on Strength"
+
+  # Defense formulas
+  defense_reduction:
+    type: DIMINISHING
+    base-value: 0.0
+    scale-value: 1.0
+    diminishing-factor: 0.008
+    description: "Percentage damage reduction based on Defense"
+
+  # Vitality formulas
+  vitality_health:
+    type: LINEAR
+    base-value: 20.0
+    scale-value: 0.5
+    description: "Maximum health based on Vitality"
+
+  vitality_regen:
+    type: DIMINISHING
+    base-value: 1.0
+    scale-value: 0.01
+    diminishing-factor: 0.01
+    description: "Health regeneration multiplier based on Vitality"
+
+  # Ferocity formulas
+  ferocity_crit_chance:
+    type: CHANCE
+    base-value: 5.0
+    scale-value: 0.5
+    description: "Critical hit chance based on Ferocity"
+
+  ferocity_crit_damage:
+    type: DIMINISHING
+    base-value: 1.5
+    scale-value: 0.005
+    diminishing-factor: 0.01
+    description: "Critical hit damage multiplier based on Ferocity"
+
+  # Agility formulas
+  agility_multi_hit_chance:
+    type: CHANCE
+    base-value: 0.0
+    scale-value: 0.25
+    description: "Multi-hit chance based on Agility"
+
+  agility_speed:
+    type: DIMINISHING
+    base-value: 1.0
+    scale-value: 0.005
+    diminishing-factor: 0.01
+    description: "Movement speed multiplier based on Agility"
+
+  # Intelligence formulas
+  intelligence_exp_bonus:
+    type: DIMINISHING
+    base-value: 1.0
+    scale-value: 0.01
+    diminishing-factor: 0.01
+    description: "Experience gain multiplier based on Intelligence"

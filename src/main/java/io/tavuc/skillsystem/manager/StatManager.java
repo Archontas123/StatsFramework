@@ -11,7 +11,7 @@ import java.util.*;
 public class StatManager {
 
     private final Main plugin;
-    private final LevelManager levelManager;
+    private LevelManager levelManager;
     private final Map<UUID, PlayerStats> playerStats = new HashMap<>();
     private final Map<String, StatType> registeredStats = new HashMap<>();
 
@@ -88,5 +88,12 @@ public class StatManager {
      */
     public StatType getStatType(String name) {
         return registeredStats.get(name.toLowerCase());
+    }
+
+
+
+
+    public void setLevelManager(LevelManager levelManager2) {
+        levelManager = levelManager2;
     }
 }

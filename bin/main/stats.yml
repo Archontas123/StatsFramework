@@ -1,0 +1,64 @@
+# Skills Framework Stats Configuration
+# Configure each stat's appearance and behavior
+
+stats:
+  strength:
+    display-name: "&cStrength"
+    description: "Increases damage dealt to enemies"
+    icon: IRON_SWORD
+    base-scale: 1.0
+    hidden: false
+
+  defense:
+    display-name: "&9Defense"
+    description: "Reduces damage taken from enemies"
+    icon: SHIELD
+    base-scale: 1.0
+    hidden: false
+
+  vitality:
+    display-name: "&aVitality"
+    description: "Increases maximum health and regeneration"
+    icon: GOLDEN_APPLE
+    base-scale: 1.0
+    hidden: false
+
+  ferocity:
+    display-name: "&4Ferocity"
+    description: "Grants a chance to deal critical hits"
+    icon: NETHERITE_SWORD
+    base-scale: 1.0
+    hidden: false
+
+  agility:
+    display-name: "&bAgility"
+    description: "Grants a chance to hit multiple times and increases speed"
+    icon: FEATHER
+    base-scale: 1.0
+    hidden: false
+
+  intelligence:
+    display-name: "&dIntelligence"
+    description: "Increases experience gained from all sources"
+    icon: ENCHANTED_BOOK
+    base-scale: 1.0
+    hidden: false
+
+# Stat Scaling Tiers
+# These tiers define the maximum stat values per level range
+tiers:
+  1:
+    level-range: 1-9
+    max-value: 50
+  2:
+    level-range: 10-24
+    max-value: 100
+  3:
+    level-range: 25-49
+    max-value: 200
+  4:
+    level-range: 50-74
+    max-value: 350
+  5:
+    level-range: 75-100
+    max-value: 500

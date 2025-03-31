@@ -4,6 +4,7 @@ import io.tavuc.skillsystem.api.events.PlayerAssignStatEvent;
 import io.tavuc.skillsystem.api.model.PlayerStats;
 import io.tavuc.skillsystem.api.model.Stat;
 import io.tavuc.skillsystem.api.model.StatType;
+import io.tavuc.skillsystem.config.ConfigManager;
 import io.tavuc.skillsystem.manager.StatManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -23,9 +24,14 @@ public class AssignStatCommand implements CommandExecutor {
      * Constructs the assign stat command.
      *
      * @param statManager The stat manager.
+     * @param configManager 
      */
-    public AssignStatCommand(StatManager statManager) {
+    public AssignStatCommand(StatManager statManager, ConfigManager configManager) {
         this.statManager = statManager;
+    }
+
+    public AssignStatCommand(StatManager statManager2) {
+        this.statManager = statManager2;
     }
 
     @Override

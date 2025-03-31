@@ -1,0 +1,88 @@
+# Skills Framework Configuration
+# Main configuration file
+
+# Debug settings
+debug:
+  # Log detailed stat effects
+  stats: false
+  # Log player data loading/saving
+  player-data: false
+
+# Settings for new players
+new-player:
+  # Starting stat points for new players
+  starting-points: 5
+
+# Leveling settings
+leveling:
+  # Base experience required for level 1
+  base-exp-requirement: 100
+  
+  # Experience formula (linear, exponential, quadratic)
+  exp-formula: linear
+  
+  # Linear formula settings
+  linear-increase: 50
+  
+  # Exponential formula settings
+  exponential-base: 1.5
+  
+  # Quadratic formula settings
+  quadratic-factor: 0.5
+  
+  # Maximum level
+  max-level: 100
+  
+  # Default stat points per level
+  default-stat-points: 5
+  
+  # Stat points per level range
+  stat-points-per-level:
+    1-10: 3
+    11-25: 5
+    26-50: 8
+    51-100: 10
+    
+  # Level up effects
+  effects:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 1.0
+    
+    title:
+      enabled: true
+      fade-in: 10
+      stay: 70
+      fade-out: 20
+
+# Experience settings
+experience:
+  # Base experience from killing entities
+  base-kill-exp: 10
+
+# Message settings
+messages:
+  # Show critical hit message
+  show-crit-hit: true
+  
+  # Show multi-hit message
+  show-multi-hit: true
+
+# Database settings
+database:
+  # Database type (yaml, mysql, mongodb)
+  type: yaml
+  
+  # MySQL settings (if type is mysql)
+  mysql:
+    host: localhost
+    port: 3306
+    database: minecraft
+    username: root
+    password: password
+    
+  # MongoDB settings (if type is mongodb)
+  mongodb:
+    connection-string: mongodb://localhost:27017
+    database: minecraft
